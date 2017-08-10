@@ -30,7 +30,7 @@ namespace KataTestCase
         public void FourInputTest()
         {
             // StringAverageTestCase("four", "zero nine five two");
-            StringAverageTestCase("n/a", "123 six two three");
+            StringAverageTestCase("n/a", "xxx six two three");
             //StringAverageTestCase("two", "one one eight one");
         }
         [TestMethod]

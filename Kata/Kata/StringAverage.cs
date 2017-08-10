@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,35 +12,53 @@ namespace Kata
         static void Main(string[] args)
         {
         }
-        static string[] TranslastionList = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+        public enum Numbers
+        {
+            zero,
+            one,
+            two,
+            three,
+            four,
+            five,
+            six,
+            seven,
+            eight,
+            nine
+        };
+        public static int inputFormatError = -999;
         public static string AverageString(string input)
         {
-            var inputFormatError = -999;
-            var result = Sum(input.Split());
-            return (result != inputFormatError) ? Average(result, input) : "n/a";
-
-        }
-        private static string Average(int result, string input)
-        {
-            try
-            {
-                return TranslastionList[result / input.Split().Length];
-            }
-            catch
+            var numberList = getNumberList(input);
+            if (numberList.Contains(inputFormatError))
             {
                 return "n/a";
             }
+            else
+            {
+                var average = (Numbers) numberList.Average();
+                return average.ToString();
+            }
+
         }
 
-        public static int Sum(String[] input)
+        private static List<int> getNumberList(string input)
         {
-            var sumNum = 0;
-            foreach (var i in input)
+
+            var stringList = input.Split();
+            List<int> numberList = new List<int>();
+            foreach (var i in stringList)
             {
-                if (Array.IndexOf(TranslastionList, i) == -1) return -999;
-                sumNum += Array.IndexOf(TranslastionList, i);
+                Numbers num;
+                if (Numbers.TryParse(i, out num))
+                {
+                    numberList.Add((int)num);
+                }
+                else
+                {
+                    numberList.Add(inputFormatError);
+                }
             }
-            return sumNum;
+            return numberList;
         }
     }
 }
