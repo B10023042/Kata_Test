@@ -53,6 +53,7 @@
     <Compile Include="StringAverageUnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DeadAntsUnitTest1.cs" />
+    <Compile Include="BandNameGeneratorUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kata\Kata.csproj">
