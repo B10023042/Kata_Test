@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BandNameGenerator.cs" />
     <Compile Include="DeadAnts.cs" />
+    <Compile Include="DuplicateCount.cs" />
     <Compile Include="Mumbling.cs" />
     <Compile Include="StringAverage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
