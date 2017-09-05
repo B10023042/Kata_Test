@@ -56,6 +56,7 @@
     <Compile Include="BandNameGeneratorUnitTest.cs" />
     <Compile Include="MumblingUnitTest1.cs" />
     <Compile Include="DuplicateCountUnitTest1.cs" />
+    <Compile Include="TwoSumUnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kata\Kata.csproj">
