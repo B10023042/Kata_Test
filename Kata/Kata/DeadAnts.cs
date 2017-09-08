@@ -11,21 +11,23 @@ namespace Kata
 
         public static int DeadAntCount(string input)
         {
-            if (String.IsNullOrEmpty(input)) return 0;
+            if (String.IsNullOrEmpty(input)) 
+            { 
+                return 0; 
+            }
             input = input.Replace("ant", string.Empty);
-            var head = input.Count(x => x == 'a');
-            var body = input.Count(x => x == 'n');
-            var end = input.Count(x => x == 't');
-            return getMaxDeadAnt(head, body, end);
-        }
-           
+            var targetString = "ant";
+            var maxNum = 0;
+            foreach (var subTarget in targetString.ToCharArray())
+            {
+                var count = input.Count(x => x == subTarget);
+                if (maxNum < count)
+                {
+                    maxNum =count;
+                }
+            }
+            return maxNum;
+        }           
 
-        private static int getMaxDeadAnt(int head, int body, int end)
-        {
-            if (head==0 && body ==0 && end==0) return 0;
-            var maxDeadAnt = Math.Max(head, body);
-            maxDeadAnt = Math.Max(maxDeadAnt, end);
-            return maxDeadAnt;
-        }
     }
 }
