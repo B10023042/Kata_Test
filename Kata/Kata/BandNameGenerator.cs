@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,8 +16,8 @@ namespace Kata
             {
                 return "";
             }
-
-            var firstCharUpperString = getFirstCharUpperString(input);
+            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+            var firstCharUpperString = textInfo.ToTitleCase(input);
 
             if (checkFormat(input))
             {
