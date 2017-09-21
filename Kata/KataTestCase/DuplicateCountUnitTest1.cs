@@ -13,6 +13,12 @@ namespace KataTestCase
         }
 
         [TestMethod]
+        public void inputNullShouldReturn0()
+        {
+            DuplicataCount(null, 0);
+        }
+
+        [TestMethod]
         public void inputNoDuplicataShouldReturn0()
         {
             DuplicataCount("abcde", 0);

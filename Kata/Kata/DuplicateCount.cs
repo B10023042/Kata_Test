@@ -10,15 +10,10 @@ namespace Kata
     {
         public static int countDuplicate(string str)
         {
+            if (String.IsNullOrEmpty(str)) return 0;
             str = str.ToLower();
             var duplicateCount = 0;
-            foreach (var t in str)
-            {
-                var duplicateTimes = str.Count(x => x == t);
-                str = str.Replace(t.ToString(), "");
-                if (duplicateTimes > 1) duplicateCount++;
-            }
-
+            duplicateCount = str.GroupBy(g => g).Count(y => y.Count() > 1);
             return duplicateCount;
         }
     }

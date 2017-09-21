@@ -45,11 +45,6 @@ namespace Kata
         private static bool checkFormat(string input)
         {
             return input[0] != input[input.Length - 1];
-        }
-
-        private static string getFirstCharUpperString(string input)
-        {
-            return string.Concat(input.Substring(0, 1).ToUpper(), input.Substring(1));
-        }
+        }     
     }
 }
