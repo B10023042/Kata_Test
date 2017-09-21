@@ -25,6 +25,12 @@ namespace KataTestCase
         }
 
         [TestMethod]
+        public void input_aabbcde_ShouldReturn2()
+        {
+            DuplicataCount("aabbcde", 2);
+        }
+
+        [TestMethod]
         public void inputOneDuplicataShouldReturn()
         {
             DuplicataCount("aacde", 1);
