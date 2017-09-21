@@ -39,7 +39,7 @@ namespace Kata
         private static string getAddTheString(string firstCharUpperString)
         {
             var namePart = "The ";
-            return namePart + firstCharUpperString;
+            return string.Concat(namePart , firstCharUpperString);
         }
 
         private static bool checkFormat(string input)
@@ -49,7 +49,7 @@ namespace Kata
 
         private static string getFirstCharUpperString(string input)
         {
-            return input.Substring(0, 1).ToUpper()+input.Substring(1);
+            return string.Concat(input.Substring(0, 1).ToUpper(), input.Substring(1));
         }
     }
 }
