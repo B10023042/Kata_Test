@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BandNameGenerator.cs" />
+    <Compile Include="ContainsDuplicateClass.cs" />
     <Compile Include="DeadAnts.cs" />
     <Compile Include="DuplicateCount.cs" />
     <Compile Include="Mumbling.cs" />

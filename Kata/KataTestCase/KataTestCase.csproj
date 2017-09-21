@@ -59,6 +59,7 @@
     <Compile Include="TwoSumUnitTest1.cs" />
     <Compile Include="ThreeSumUnitTest.cs" />
     <Compile Include="NextBiggerNumberClassUnitTest1.cs" />
+    <Compile Include="ContainsDuplicateUnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kata\Kata.csproj">
