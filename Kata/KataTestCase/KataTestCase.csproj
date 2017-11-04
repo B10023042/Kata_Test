@@ -64,6 +64,7 @@
     <Compile Include="NextBiggerNumberClassUnitTest1.cs" />
     <Compile Include="ContainsDuplicateUnitTest1.cs" />
     <Compile Include="ContainsDuplicateIIIUnitTest1.cs" />
+    <Compile Include="SumStringTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kata\Kata.csproj">
