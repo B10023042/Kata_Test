@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BandNameGenerator.cs" />
+    <Compile Include="CellOfConway.cs" />
     <Compile Include="ContainsDuplicateClass.cs" />
     <Compile Include="ContainsDuplicateIII.cs" />
     <Compile Include="DeadAnts.cs" />
