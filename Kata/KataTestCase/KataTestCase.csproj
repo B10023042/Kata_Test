@@ -53,6 +53,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Rot13Tests.cs" />
     <Compile Include="StringAverageUnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DeadAntsUnitTest1.cs" />

@@ -52,6 +52,7 @@
     <Compile Include="DuplicateCount.cs" />
     <Compile Include="Mumbling.cs" />
     <Compile Include="NextBiggerNumber.cs" />
+    <Compile Include="Rot13.cs" />
     <Compile Include="StringAverage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SumStringsClass.cs" />
